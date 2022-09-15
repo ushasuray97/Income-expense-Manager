@@ -3,8 +3,8 @@
         <title>Income-Expense Manager</title>
         <script>
             function display(){
-                let sal=document.getElementById('income').value;
-                console.log(sal);
+                let sal=sessionStorage.getItem("salary"); 
+                document.write(sal);
                 let expense=document.getElementById('expense').value;
                 let savings=sal-expense;
                 document.getElementById('savings').innerHTML=savings;
@@ -14,7 +14,8 @@
             form{
                 text-align: center;
                 margin: 180px;
-                /* border: 2px solid blue; */
+                border: 2px solid blue;
+                padding: 50px 10px;
                 height: 100px;
                 width: 400px;
             }
@@ -22,16 +23,18 @@
                 text-decoration: none;
                 color: black;
             }
+            div{
+                display: none;
+            }
         </style>
     </head>
     <body>
         <form>
-            
+            <h1>Income-Expense Manager</h1>
             <button id="income" ><a href="income.html">Income</a></button>
             <button id="expense"><a href="expense.html">Expense</a></button>
             <button id="display" onclick="display()">Display</button>
             <div id="savings"></div>
-        </form>
-        
+        </form>        
     </body>
 </html>
