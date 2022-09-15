@@ -6,14 +6,8 @@
         Source of income:<input type="text" name="source of income" placeholder="Enter source of income"><br>
         Salary:<input type="text" name="salary" placeholder="Enter salary" id="sal">
         <button value="add" onclick="income()">Add</button>
-        <script>
-            function income(){
-                let sal=document.getElementById('sal').value;
-                localStorage.setItem("salary", sal);
-
-                alert("you added"+sal+"for salary");
-                window.location.href="Project.html";
-            }
+        <script src="project.js">
+            
         </script>
     </body>
 </html>

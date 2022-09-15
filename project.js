@@ -1,6 +1,18 @@
+function income(){
+    let sal=document.getElementById('sal').value;
+    localStorage.setItem("salary", sal);
 
-let salary=localStorage.getItem("salary"); 
-document.write("salary is",sal);
+    alert("you added"+sal+"for salary");
+    window.location.href="Project.html";
+}
+
+function expense(){
+    let expenseamt=document.getElementById('amt').value;
+    alert("you added"+expenseamt+"for expenses");
+    window.location.href="Project.html";
+}
+
+
 function display(){
     var resetvalue=0;
     localStorage.setItem("salary",resetvalue);

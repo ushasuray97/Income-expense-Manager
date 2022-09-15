@@ -5,13 +5,9 @@
     <body>
         Source of expense:<input type="text" name="source of expense" placeholder="Enter source of expense"><br>
         Expense:<input type="text" name="amount" placeholder="Enter amount" id="amt">
-        <button value="add" onclick="income()">Add</button>
-        <script>
-            function income(){
-                let expenseamt=document.getElementById('amt').value;
-                alert("you added"+expenseamt+"for expenses");
-                window.location.href="Project.html";
-            }
+        <button value="add" onclick="expense()">Add</button>
+        <script src="project.js">
+            
         </script>
     </body>
 </html>
