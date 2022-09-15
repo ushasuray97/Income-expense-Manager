@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Income-Expense Manager</title>
-        
+        <script src="project.js"></script>
         <style>
             form{
                 text-align: center;
@@ -29,16 +29,5 @@
             <div id="savings"></div>
         </form>
         
-        <script>
-            let salary=localStorage.getItem("salary"); 
-            document.write("salary is",sal);
-            function display(){
-                var resetvalue=0;
-                localStorage.setItem("salary",resetvalue);
-                let expense=document.getElementById('expense').value;
-                let savings=sal-expense;
-                document.getElementById('savings').innerHTML=savings;
-            }
-        </script>
     </body>
 </html>
