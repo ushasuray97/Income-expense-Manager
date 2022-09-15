@@ -1,15 +1,7 @@
 <html>
     <head>
         <title>Income-Expense Manager</title>
-        <script>
-            function display(){
-                let sal=sessionStorage.getItem("salary"); 
-                document.write(sal);
-                let expense=document.getElementById('expense').value;
-                let savings=sal-expense;
-                document.getElementById('savings').innerHTML=savings;
-            }
-        </script>
+        
         <style>
             form{
                 text-align: center;
@@ -35,6 +27,16 @@
             <button id="expense"><a href="expense.html">Expense</a></button>
             <button id="display" onclick="display()">Display</button>
             <div id="savings"></div>
-        </form>        
+        </form>
+        
+        <script>
+            function display(){
+                let sal=localStorage.getItem("salary"); 
+                alert("salary is",sal);
+                let expense=document.getElementById('expense').value;
+                let savings=sal-expense;
+                document.getElementById('savings').innerHTML=savings;
+            }
+        </script>
     </body>
 </html>
